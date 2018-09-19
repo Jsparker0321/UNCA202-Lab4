@@ -8,7 +8,7 @@ public class UniversityMember extends Person {
 	}
 	
 	
-	public String idNumber() {
+	public String getidNumber() {
 		return idNumber;
 	}
 	

@@ -8,6 +8,10 @@ public class Driver {
 		
 		System.out.println(p1.hashCode());
 		
+		//Create a UniversityMember
+		//Create a Professor
+		//Create a Student
+		
 	}
 	
 }

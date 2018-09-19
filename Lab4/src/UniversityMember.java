@@ -9,7 +9,7 @@ public class UniversityMember extends Person {
 	
 	@Override
 	public int hashCode() {
-		int hash 7;
+		int hash 1;
 		hash = 31 * super.hashCode();
 		hash = 31 * idNumber.hashCode();
 		return hash;

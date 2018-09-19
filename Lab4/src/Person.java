@@ -26,7 +26,7 @@ public class Person {
 	
 	@Override
 	public int hashCode() {
-		int hash = 11;
+		int hash = 3;
 		hash = 31 * hash + age;
 		hash = 31 * hash + name.hashCode();
 		return hash;

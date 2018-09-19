@@ -7,9 +7,19 @@ public class UniversityMember extends Person {
 		this.idNumber = idNumber;
 	}
 	
+	
+	public String idNumber() {
+		return idNumber;
+	}
+	
+	public void setIDNumber(String idNumber) {
+		this.idNumber = idNumber;
+	}
+	
+	
 	@Override
 	public int hashCode() {
-		int hash 1;
+		int hash = 1;
 		hash = 31 * super.hashCode();
 		hash = 31 * idNumber.hashCode();
 		return hash;

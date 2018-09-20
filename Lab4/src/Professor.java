@@ -16,6 +16,31 @@ public class Professor extends UniversityMember{
 		this.officeNumber = officeNumber;
 	}
 	
+	
+	@Override
+	public int hashCode() {
+		int hash = 1;
+		hash = 31 * super.hashCode();
+		hash = 31 * officeNumber.hashCode();
+		return hash;
+	}
+	
+	
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) return true;
+		if (obj == null) return false;
+		if (getClass() != obj.getClass()) return false;
+		if (!super.equals(obj)) return false;
+		Professor pro = (Professor) obj;
+		return officeNumber.equals(pro.officeNumber);
+	}
+	
+	
+	
+	
+	
+	
 	@Override
 	public String toString() {
 		return super.toString() + " Office: " + officeNumber;

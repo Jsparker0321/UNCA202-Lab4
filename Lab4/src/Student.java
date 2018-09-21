@@ -34,7 +34,10 @@ public class Student extends UniversityMember {
 		if (getClass() != obj.getClass()) return false;
 		if (!super.equals(obj)) return false;
 		Student stu = (Student) obj;
-		return Double.compare(gpa, stu.gpa);
+		//Will compare numeric values rather than reference:
+		return Double.valueOf(gpa).equals(Double.valueOf(stu.gpa));
+	
+		//return Double.valueOf(gpa) == Double.valueOf(stu.gpa);
 		
 	}
 
